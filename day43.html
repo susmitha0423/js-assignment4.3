@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        </head>
+        <title>
+            </title>
+        <body>
+        <script type="text/javascript">
+var dice={
+    sides:6,
+    roll:function() {
+        var randomNumber=math.floor(math.random()*this.sides)+1;
+        return randomNumber;
+    }
+}
+//print dice roll to the page
+function printNumber(number)
+{
+    var placeholder=document.getEementById('placehoder');
+    placement.innerhtml=number;
+}
+var button =document.getElementById('button');
+button.oncick=function() {
+var result=dice.roll();
+printNumber(result);
+};
+    }
+</script>
+</body>
+</html>
